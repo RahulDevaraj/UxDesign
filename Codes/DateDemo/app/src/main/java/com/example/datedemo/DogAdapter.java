@@ -46,7 +46,9 @@ public class DogAdapter extends RecyclerView.Adapter<DogAdapter.DogViewHolder> {
         dogViewHolder.binding.txtViewName.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(context.getApplicationContext(), ""+AdapterDogData.get(dogViewHolder.getAdapterPosition()).getDogName(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(context.getApplicationContext(), 
+                ""+AdapterDogData.get(dogViewHolder.getAdapterPosition()).getDogName(), 
+                Toast.LENGTH_SHORT).show();
             }
         });
         return dogViewHolder;
